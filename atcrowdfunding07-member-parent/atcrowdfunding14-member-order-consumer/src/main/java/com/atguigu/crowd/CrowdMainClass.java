@@ -6,7 +6,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 // 启用Feign客户端功能
-@EnableFeignClients(basePackages = {"com.codingapi.tx","com.atguigu.crowd"})
+@EnableFeignClients
 @EnableDiscoveryClient
 @SpringBootApplication
 public class CrowdMainClass {

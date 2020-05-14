@@ -2,6 +2,7 @@ package com.atguigu.crowd.service.impl;
 
 import java.util.List;
 
+import com.codingapi.tx.annotation.TxTransaction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
@@ -40,6 +41,7 @@ public class MemberServiceImpl implements MemberService {
 		return list.get(0);
 	}
 
+	@TxTransaction
 	@Transactional(
 			propagation = Propagation.REQUIRES_NEW,
 			rollbackFor = Exception.class,

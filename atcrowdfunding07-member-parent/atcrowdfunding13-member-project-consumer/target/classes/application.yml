@@ -22,3 +22,7 @@ aliyun:
     bucket-domain: http://atguigu190830.oss-cn-shenzhen.aliyuncs.com
     bucket-name: atguigu190830
     end-point: http://oss-cn-shenzhen.aliyuncs.com
+#txmanager地址
+tm:
+  manager:
+    url: http://127.0.0.1:9010/tx/manager/
